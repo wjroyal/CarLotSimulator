@@ -18,7 +18,9 @@ namespace CarLotSimulator
         //DONE The methods should take one string parameter: the respective noise propert
         public  Car()
         {
-            
+            CarLot.numberOfCars++;
+
+            //ClassName.StaticMember
         }
         public Car(int year, 
             string make,
@@ -34,6 +36,7 @@ namespace CarLotSimulator
             HonkNoise = honkNoise;
             IsDriveable = isDriveable;
 
+            CarLot.numberOfCars++;
         }
         public int Year { get; set; }
         public string Make { get; set; }

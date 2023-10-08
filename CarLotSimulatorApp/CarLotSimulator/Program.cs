@@ -32,7 +32,9 @@ namespace CarLotSimulator
                 IsDriveable = true,
             };
 
+
             lot.Cars.Add(jeepPatriot);
+            Console.WriteLine($"Number of cars created: {CarLot.numberOfCars}");
 
             Car harleyDyna = new Car();
 
@@ -45,10 +47,12 @@ namespace CarLotSimulator
             harleyDyna.IsDriveable = true;
 
             lot.Cars.Add(harleyDyna);
+            Console.WriteLine($"Number of cars created: {CarLot.numberOfCars}");
 
             Car schoolBus = new Car(1995, "Bluebird", "TC2000", "bruuuuum", "Baaa", true);
 
             lot.Cars.Add(schoolBus);
+            Console.WriteLine($"Number of cars created: {CarLot.numberOfCars}");
 
             Car chevyPickup = new Car()
             {
@@ -61,7 +65,7 @@ namespace CarLotSimulator
             };
 
             lot.Cars.Add(chevyPickup);
-
+            Console.WriteLine($"Number of cars created: {CarLot.numberOfCars}");
 
 
             //Call each of the methods for each car
@@ -87,9 +91,12 @@ namespace CarLotSimulator
             //DONE It should have at least one property: a List of cars
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
 
+           
+
+
             foreach(var Car in lot.Cars)
             {
-                Console.WriteLine($"Year:{Car.Year} Make: {Car.Make} Model: {Car.Model}");
+                Console.WriteLine($"Year:{Car.Year} Make: {Car.Make} Model: {Car.Model}"); 
             }
         }
     }
